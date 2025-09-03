@@ -1,3 +1,107 @@
+@media (max-width: 600px) {
+  #countdown-container {
+    padding-bottom: 18px;
+  }
+  .countdown-date {
+    margin-top: 18px !important;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  #countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    width: 100vw;
+    margin: 0 auto 16px auto;
+    padding: 0 2vw;
+    box-sizing: border-box;
+  }
+  .circle-box {
+    background: #101c1c;
+    border-radius: 50%;
+    box-shadow: 0 0 16px #00ffcc55, 0 0 2px #fff;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    border: 2px solid #00ffcc;
+  }
+  .circle-box span {
+    font-size: 1.6em;
+    color: #00ffcc;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .circle-box .label {
+    font-size: 0.85em;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 600px) {
+  #countdown {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2vw;
+    width: 100vw;
+    padding: 0 2vw;
+    box-sizing: border-box;
+  }
+  .countdown-item, .modern-box {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: none;
+    width: 23vw;
+    margin: 0;
+    padding: 10px 0 8px 0;
+    font-size: 1.1em;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #00ffcc22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .countdown-item span, .modern-box span {
+    font-size: 1.5em;
+    margin-top: 2px;
+  }
+  .countdown-item div, .modern-box .label {
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .countdown-item span, .modern-box span {
+    font-size: 1.1em;
+    margin-top: 2px;
+  }
+  .countdown-item div, .modern-box .label {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .countdown-item span, .modern-box span {
+    font-size: 1.3em;
+    margin-top: 4px;
+  }
+  .countdown-item div, .modern-box .label {
+    font-size: 0.95em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
 /* Reset and base styles */
 * {
   margin: 0;
@@ -297,59 +401,752 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .slider {
-    gap: 8px;
-    padding: 16px 2px;
+  body {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #071a16 60%, #1a3a36 100%);
   }
-  .slide.event-card {
-    min-width: 160px;
-    max-width: 160px;
-    padding: 12px 2px 8px 2px;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 8px 10px 8px;
+    min-height: unset;
+    box-shadow: 0 2px 8px #00ffcc22;
+    border-radius: 0 0 18px 18px;
+    width: 100vw;
   }
-  .event-img {
-    width: 80px;
-    height: 50px;
+  .navbar-links {
+    display: none !important;
   }
-  section h2 {
-    font-size: 1.3em;
+  .college-logo img {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  }
+  .cyberia-logo img {
+    display: block;
+    height: 54px !important;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00ffcc44;
   }
   header h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-align: center;
+    margin: 18px 0 8px 0;
+    color: #00ffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  #countdown-container {
+    margin: 18px 0 10px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+
+  .countdown-item, .modern-box {
+    background: #0a1a0f;
+    border-radius: 18px;
+    box-shadow: 0 0 12px #00ffcc22;
+    padding: 18px 12px 12px 12px;
+    text-align: center;
+    min-width: 60px;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .countdown-item span, .modern-box span {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Segoe UI', monospace;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+  .countdown-item div, .modern-box .label {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+  }
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .modern-box span {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fff;
+  }
+  .modern-box .label {
+    font-size: 1em;
+    color: #aaffcc;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 12px;
+    width: 100%;
+    padding: 0 2vw;
+  }
+  .event-card {
+    width: 96vw;
+    margin: 0 auto 12px auto;
+    box-shadow: 0 2px 12px #00ffcc22;
+    border-radius: 18px;
+    background: #102a18;
+    padding: 10px 0;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding: 14px 0;
+    border-radius: 12px;
+    background: #00ffff;
+    color: #071a16;
+    font-weight: 700;
+    box-shadow: 0 2px 8px #00ffcc22;
+  }
+  section, .countdown-date, .coordinator-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .countdown-date {
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer, .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 6px;
+    text-align: center;
+    line-height: 1.5em;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
+    border-radius: 18px 18px 0 0;
+    margin-top: 10px;
+  }
+  .whatsapp-float {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 100;
+  }
+  .whatsapp-float img {
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px #00ffcc44;
+    border-radius: 50%;
+  }
+  h2, h3 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 18px;
+    color: #00ffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+    min-height: unset;
+  }
+  .navbar-links {
+    gap: 18px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  .cyberia-logo img {
+    height: 60px !important;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  #countdown {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .modern-box {
+    min-width: 120px;
+    padding: 16px 0;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 18px;
+  }
+  .event-card {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+  }
+  footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
   }
 }
 
 #countdown-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   margin: 32px 0 16px 0;
 }
 
 #countdown {
   display: flex;
-  gap: 24px;
-  margin-bottom: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
 }
 
-.countdown-item {
-  background: #102a18;
+.countdown-item, .modern-box {
+  background: #0a1a0f;
   border-radius: 18px;
-  box-shadow: 0 0 16px #00ffcc44;
-  padding: 18px 24px;
+  box-shadow: 0 0 12px #00ffcc22;
+  padding: 18px 12px 12px 12px;
   text-align: center;
+  min-width: 60px;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.countdown-item span {
+.countdown-item span, .modern-box span {
   font-size: 2.5em;
   color: #fff;
   font-family: 'Segoe UI', monospace;
-  display: block;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.countdown-item div, .modern-box .label {
+  font-size: 1.1em;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
 }
 
-.countdown-item div {
-  font-size: 1em;
+.countdown-date {
+  margin-top: 5px;
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Modern Countdown Box Styles */
+.modern-box {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #00ffcc55;
+  background: linear-gradient(135deg, #102a18 80%, #00ffcc22 100%);
+  padding: 22px 32px;
+  min-width: 90px;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.modern-box span {
+  font-size: 2.7em;
+  color: #fff;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+}
+.modern-box .label {
+  font-size: 1.1em;
   color: #aaffcc;
-  margin-top: 6px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Flip Card Effect for Event Cards */
+.flip-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(.4,2,.3,.7);
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flip-card-front {
+  z-index: 2;
+}
+.flip-card-back {
+  background: #0a1620;
+  color: #fff;
+  transform: rotateY(180deg);
+  z-index: 1;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flip-card-back h3, .flip-card-back img {
+  display: none;
+}
+.flip-card-back p {
+  font-size: 1.1em;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 8px;
+}
+
+/* --- Professional Event Card Styles --- */
+.event-card, .slide.event-card {
+  padding: 0;
+  width: 300px;
+  min-width: 260px;
+  max-width: 320px;
+  min-height: 360px;
+  height: 360px;
+  margin: 0 0 32px 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 #00fff2a0, 0 2px 8px #000a;
+  background: #181818;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.event-card:hover, .slide.event-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 16px 48px #00fff2cc, 0 4px 16px #000c;
+}
+.event-img {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 24px auto 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 16px #00ffcc22;
+}
+.event-card h3, .slide.event-card h3 {
+  margin: 18px 0 0 0;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 1000;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #0008;
+  background: #fff;
+}
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a2a36 80%, #00bfae 100%);
+  z-index: 9999;
+  padding-top: 48px;
+  transition: opacity 0.3s;
+}
+.close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 2.5em;
+  color: #00bfae;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10001;
+}
+.mobile-navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 48px;
+}
+.mobile-navbar-links a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 18px 0;
+  width: 80vw;
+  text-align: center;
+  border-radius: 16px;
+  background: #223344;
+  box-shadow: 0 2px 12px #00bfae44;
+  transition: background 0.2s, color 0.2s;
+}
+.mobile-navbar-links a:active, .mobile-navbar-links a:focus {
+  background: #00bfae22;
+  color: #00bfae;
+}
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 10000;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block !important;
+  }
+  .navbar-links {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 8px 10px 8px;
+    min-height: unset;
+    box-shadow: 0 2px 8px #00ffcc22;
+    border-radius: 0 0 18px 18px;
+    width: 100vw;
+  }
+  .college-logo img {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  }
+  .cyberia-logo img {
+    display: block;
+    height: 54px !important;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00ffcc44;
+  }
+  header h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 18px 0 8px 0;
+    color: #00ffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  #countdown-container {
+    margin: 18px 0 10px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+  #countdown {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+  .modern-box {
+    min-width: 60px;
+    max-width: 220px;
+    padding: 14px 0;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #00ffcc44;
+    background: linear-gradient(135deg, #102a18 80%, #00ffcc22 100%);
+    margin-bottom: 8px;
+  }
+  .modern-box span {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fff;
+  }
+  .modern-box .label {
+    font-size: 1em;
+    color: #aaffcc;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 12px;
+    width: 100%;
+    padding: 0 2vw;
+  }
+  .event-card {
+    width: 96vw;
+    margin: 0 auto 12px auto;
+    box-shadow: 0 2px 12px #00ffcc22;
+    border-radius: 18px;
+    background: #102a18;
+    padding: 10px 0;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding: 14px 0;
+    border-radius: 12px;
+    background: #00ffff;
+    color: #071a16;
+    font-weight: 700;
+    box-shadow: 0 2px 8px #00ffcc22;
+  }
+  section, .countdown-date, .coordinator-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .countdown-date {
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer, .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 6px;
+    text-align: center;
+    line-height: 1.5em;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
+    border-radius: 18px 18px 0 0;
+    margin-top: 10px;
+  }
+  .whatsapp-float {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 100;
+  }
+  .whatsapp-float img {
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px #00ffcc44;
+    border-radius: 50%;
+  }
+  h2, h3 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 18px;
+    color: #00ffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .hamburger-menu {
+    display: block !important;
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 10000;
+    cursor: pointer;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+    min-height: unset;
+  }
+  .navbar-links {
+    gap: 18px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  .cyberia-logo img {
+    height: 60px !important;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  #countdown {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .modern-box {
+    min-width: 120px;
+    padding: 16px 0;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 18px;
+  }
+  .event-card {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+  }
+  footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
+  }
+}
+
+#countdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 32px 0 16px 0;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.countdown-item, .modern-box {
+  background: #0a1a0f;
+  border-radius: 18px;
+  box-shadow: 0 0 12px #00ffcc22;
+  padding: 18px 12px 12px 12px;
+  text-align: center;
+  min-width: 60px;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countdown-item span, .modern-box span {
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.countdown-item div, .modern-box .label {
+  font-size: 1.1em;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
 }
 
 .countdown-date {
@@ -492,4 +1289,302 @@ footer {
 }
 .whatsapp-float:hover {
   transform: scale(1.08);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a2a36 80%, #00bfae 100%);
+  z-index: 9999;
+  padding-top: 48px;
+  transition: opacity 0.3s;
+}
+.close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 2.5em;
+  color: #00bfae;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10001;
+}
+.mobile-navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 48px;
+}
+.mobile-navbar-links a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 18px 0;
+  width: 80vw;
+  text-align: center;
+  border-radius: 16px;
+  background: #223344;
+  box-shadow: 0 2px 12px #00bfae44;
+  transition: background 0.2s, color 0.2s;
+}
+.mobile-navbar-links a:active, .mobile-navbar-links a:focus {
+  background: #00bfae22;
+  color: #00bfae;
+}
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 10000;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block !important;
+  }
+  .navbar-links {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 8px 10px 8px;
+    min-height: unset;
+    box-shadow: 0 2px 8px #00ffcc22;
+    border-radius: 0 0 18px 18px;
+    width: 100vw;
+  }
+  .college-logo img {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  }
+  .cyberia-logo img {
+    display: block;
+    height: 54px !important;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00ffcc44;
+  }
+  header h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 18px 0 8px 0;
+    color: #00ffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  #countdown-container {
+    margin: 18px 0 10px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+  #countdown {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+  .modern-box {
+    min-width: 60px;
+    max-width: 220px;
+    padding: 14px 0;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #00ffcc44;
+    background: linear-gradient(135deg, #102a18 80%, #00ffcc22 100%);
+    margin-bottom: 8px;
+  }
+  .modern-box span {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fff;
+  }
+  .modern-box .label {
+    font-size: 1em;
+    color: #aaffcc;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 12px;
+    width: 100%;
+    padding: 0 2vw;
+  }
+  .event-card {
+    width: 96vw;
+    margin: 0 auto 12px auto;
+    box-shadow: 0 2px 12px #00ffcc22;
+    border-radius: 18px;
+    background: #102a18;
+    padding: 10px 0;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding: 14px 0;
+    border-radius: 12px;
+    background: #00ffff;
+    color: #071a16;
+    font-weight: 700;
+    box-shadow: 0 2px 8px #00ffcc22;
+  }
+  section, .countdown-date, .coordinator-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .countdown-date {
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer, .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 6px;
+    text-align: center;
+    line-height: 1.5em;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
+    border-radius: 18px 18px 0 0;
+    margin-top: 10px;
+  }
+  .whatsapp-float {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 100;
+  }
+  .whatsapp-float img {
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px #00ffcc44;
+    border-radius: 50%;
+  }
+  h2, h3 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 18px;
+    color: #00ffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .hamburger-menu {
+    display: block !important;
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 10000;
+    cursor: pointer;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+    min-height: unset;
+  }
+  .navbar-links {
+    gap: 18px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  .college-info {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  .cyberia-logo img {
+    height: 60px !important;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  #countdown {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .modern-box {
+    min-width: 120px;
+    padding: 16px 0;
+  }
+  .slider {
+    flex-direction: column !important;
+    gap: 18px;
+  }
+  .event-card {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+  }
+  footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .coordinator-footer {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-align: center;
+    background: #071a16;
+    color: #aaffcc;
+    border-top: 1px solid #00ffcc44;
+  }
+}
+
+#countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0 16px 0;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
 }

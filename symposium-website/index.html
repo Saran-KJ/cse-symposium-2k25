@@ -20,10 +20,10 @@
       <a href="#">HOME</a>
       <a href="#events">EVENTS</a>
       <a href="#">REGISTER</a>
-      <a href="#">ABOUT US</a>
+      <a href="#">ABOUT </a>
     </nav>
     <div class="cyberia-logo">
-  <img src="image/cyberia-logo.jpg" alt="Cyberia Logo" style="height:90px; width:auto; margin-left:24px; border-radius:16px; box-shadow:0 4px 24px #00ffcc55;" />
+  <img src="image/cyberia2k25.jpg" alt="Cyberia Logo" style="height:90px; width:auto; margin-left:24px; border-radius:16px; box-shadow:0 4px 24px #00ffcc55;" />
     </div>
   </div>
 </header>
@@ -62,10 +62,10 @@
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="image/WebNova.jpg" alt="WebNova" class="event-img" />
-              <h3>WebNova</h3>
+              <h3>Prompt Craft</h3>
             </div>
             <div class="flip-card-back">
-              <h3>WebNova</h3>
+              <h3>Prompt Craft</h3>
               <p>Web development challenge. Build creative and functional websites.</p>
             </div>
           </div>
@@ -162,21 +162,21 @@
   </div>
 </section>
 <div id="countdown-container">
-  <div id="countdown" style="display: flex; justify-content: center; gap: 24px; margin-bottom: 16px;">
-    <div class="countdown-item modern-box">
-      <span id="days">0</span>
+  <div id="countdown">
+    <div class="countdown-item circle-box">
+      <span id="days">00</span>
       <div class="label">Days</div>
     </div>
-    <div class="countdown-item modern-box">
-      <span id="hours">0</span>
+    <div class="countdown-item circle-box">
+      <span id="hours">00</span>
       <div class="label">Hours</div>
     </div>
-    <div class="countdown-item modern-box">
-      <span id="minutes">0</span>
+    <div class="countdown-item circle-box">
+      <span id="minutes">00</span>
       <div class="label">Minutes</div>
     </div>
-    <div class="countdown-item modern-box">
-      <span id="seconds">0</span>
+    <div class="countdown-item circle-box">
+      <span id="seconds">00</span>
       <div class="label">Seconds</div>
     </div>
   </div>
@@ -189,9 +189,32 @@
   
   
 
-  <footer>
-    <p>&copy; 2025 Cyberia Symposium | Contact: cyberia@yourcollege.edu</p>
+
+  <div class="coordinator-footer">
+      <div style="background:#c020b0; color:#fff; padding:18px 0 10px 0; text-align:center; font-family:'Oswald', 'Segoe UI', sans-serif; font-size:1.15em; letter-spacing:2px; border-top-left-radius:14px; border-top-right-radius:14px; display:flex; flex-wrap:wrap; justify-content:center; gap:48px;">
+        <div style="min-width:220px; text-align:left;">
+          <div style="font-size:1.05em; font-weight:700; letter-spacing:2px; margin-bottom:4px;">STAFF COORDINATOR</div>
+          <div style="font-size:1.15em; font-weight:800; letter-spacing:1px; margin-bottom:2px;">Mr. K. Sivakumar <span style="font-size:0.8em; font-weight:500;">AP/CSE</span></div>
+          <div style="font-size:1em; color:#eee; font-weight:500; margin-bottom:2px;">
+            <img src="image/whatsapp-logo-png-2261.png" alt="WhatsApp" style="height:1em;vertical-align:middle;margin-right:4px;">9524193027
+          </div>
+        </div>
+        <div style="min-width:220px; text-align:left;">
+          <div style="font-size:1.05em; font-weight:700; letter-spacing:2px; margin-bottom:4px;">STUDENT COORDINATORS</div>
+          <div style="font-size:1.1em; font-weight:800; letter-spacing:1px; margin-bottom:2px;">E. Jayakanthan</div>
+          <div style="font-size:1.1em; font-weight:800; letter-spacing:1px; margin-bottom:2px;">RB. Ragul</div>
+        </div>
+      </div>
+      <div style="background:#142a47; color:#fff; padding:12px 0; text-align:center; font-family:'Oswald', 'Segoe UI', sans-serif; font-size:1.15em; letter-spacing:2px; border-bottom-left-radius:14px; border-bottom-right-radius:14px;">
+        <span style="font-weight:700; font-size:1.1em; letter-spacing:2px;">Contact Us:</span>
+        <span style="font-size:1.1em; font-weight:800; letter-spacing:2px; margin-left:12px;">9025381273, 6379363679</span>
+      </div>
+    </div>
+
+      <footer>
+    <p>&copy; 2025 Cyberia Symposium </p>
   </footer>
+
 
   <script>
 // Flip card on click
@@ -220,11 +243,39 @@ document.querySelectorAll('.flip-card').forEach(card => {
   }
   setInterval(updateCountdown, 1000);
   updateCountdown();
+
+  function toggleMobileMenu() {
+  const overlay = document.getElementById('mobileMenuOverlay');
+  if (overlay.style.display === 'block') {
+    overlay.style.display = 'none';
+  } else {
+    overlay.style.display = 'block';
+  }
+}
+// Hide overlay on load
+window.onload = function() {
+  document.getElementById('mobileMenuOverlay').style.display = 'none';
+};
 </script>
 </body>
   <div class="whatsapp-float">
-    <a href="https://wa.me/1234567890" target="_blank">
+    <a href="https://chat.whatsapp.com/BbRr3wc3KBMLtKAsSgHCyy?mode=ac_t" target="_blank">
       <img src="image/whatsapp-logo-png-2261.png" alt="WhatsApp" style="width:60px; height:60px;" />
     </a>
   </div>
+
+  <!-- Mobile Menu Overlay -->
+<div id="mobileMenuOverlay" class="mobile-menu-overlay">
+  <span class="close-menu" onclick="toggleMobileMenu()">&times;</span>
+  <nav class="mobile-navbar-links">
+    <a href="#" onclick="toggleMobileMenu()">HOME</a>
+    <a href="#events" onclick="toggleMobileMenu()">EVENTS</a>
+    <a href="#" onclick="toggleMobileMenu()">REGISTER</a>
+    <a href="#" onclick="toggleMobileMenu()">ABOUT </a>
+  </nav>
+</div>
+<!-- Hamburger Icon -->
+<span class="hamburger-menu" onclick="toggleMobileMenu()">
+  <svg width="32" height="32" viewBox="0 0 32 32"><rect y="6" width="32" height="4" rx="2" fill="#00ffff"/><rect y="14" width="32" height="4" rx="2" fill="#00ffff"/><rect y="22" width="32" height="4" rx="2" fill="#00ffff"/></svg>
+</span>
 </html>
