@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Popup Modal for Symposium Image -->
-    <div id="img-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+  <div id="img-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:20000; justify-content:center; align-items:center;">
       <div style="background:#fff; padding:24px; border-radius:12px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px #0005; position:relative; display:flex; flex-direction:column; align-items:center;">
         <button onclick="document.getElementById('img-popup').style.display='none'" style="position:absolute; top:12px; right:12px; background:#c020b0; color:#fff; border:none; border-radius:6px; padding:6px 12px; cursor:pointer; font-size:1em;">Close</button>
         <h2 style="margin-bottom:16px; color:#c020b0;">Symposium 2K25</h2>
@@ -43,25 +43,25 @@
 </header>
   <header>
     <h1>CYBERIA-2k25</h1>
-    <p>National Level Tech Symposium | Hosted By ROEVER ENGINEERING COLLEGE</p>
+    <p>National Level Tech Symposium | Organized by CSE Department, Roever Engineering College</p>
 
   </header>
 
-  <section id="about">
-  <h2>About CYBERIA-2k25</h2>
-  <p>CYBERIA-2K25 is the annual national-level technical symposium organized by the Department of Computer Science and Engineering at Roever Engineering College, Perambalur. This event serves as a professional platform for students and aspiring technologists to showcase their skills, share innovative ideas, and engage in collaborative learning.
+  <section id="about" class="fade-in">
+  <h2 class="fade-in">About CYBERIA-2k25</h2>
+  <p class="fade-in">CYBERIA-2K25 is the annual national-level technical symposium organized by the Department of Computer Science and Engineering at Roever Engineering College, Perambalur. This event serves as a professional platform for students and aspiring technologists to showcase their skills, share innovative ideas, and engage in collaborative learning.
 
 The symposium features a diverse range of technical events, workshops, and competitions designed to foster creativity, problem-solving, and teamwork. CYBERIA-2K25 brings together future developers, designers, and technology leaders to connect, compete, and grow in a dynamic environment.
 
 Join us for an enriching experience that combines technical excellence with professional networking, knowledge sharing, and personal development.</p>
   </section>
 
- <section id="events">
-  <h2>Events</h2>
+ <section id="events" class="fade-in">
+  <h2 class="fade-in">Events</h2>
   <div class="slider-container" style="flex-direction: column; align-items: center;">
     <h3 style="color:#00ffff; font-size:2em; margin-bottom:24px; font-family:'Segoe UI',sans-serif; font-weight:600; letter-spacing:1px;">Technical Events</h3>
     <div class="slider" style="justify-content: center;">
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -69,13 +69,24 @@ Join us for an enriching experience that combines technical excellence with prof
               <h3>TechScribe</h3>
             </div>
             <div class="flip-card-back">
-              <h3>TechScribe</h3>
-              <p>Technical paper presentation event. Showcase your research and ideas.</p>
+              <h3>TechScribe-Theme</h3>
+              <ul>
+                <li>Theme 1: AI Beyond Imagination</li>
+                <li>Theme 2: Cybersecurity in the AI Era</li>
+                <li>Theme 3: Smart Living with AIoT</li>
+                <li>Theme 4: Quantum Leap</li>
+                <li>Theme 5: Green Tech Revolution</li>
+                <li>Theme 6: Metaverse & XR</li>
+                <li>Theme 7: Blockchain & Web3</li>
+                <li>Theme 8: Machine Learning & Deep Learning</li>
+              </ul>
+
+              
             </div>
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -89,7 +100,7 @@ Join us for an enriching experience that combines technical excellence with prof
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -98,12 +109,12 @@ Join us for an enriching experience that combines technical excellence with prof
             </div>
             <div class="flip-card-back">
               <h3>Code Morphism</h3>
-              <p>Coding contest. Solve algorithmic problems and win prizes.</p>
+              <p>Coding contest. Code morphism is the process of converting code from one programming language to another while keeping the same logic and behavior.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -120,7 +131,7 @@ Join us for an enriching experience that combines technical excellence with prof
     </div>
   <h3 style="color:#00ffff; font-size:2em; margin:48px 0 24px 0; font-family:'Segoe UI',sans-serif; font-weight:600; letter-spacing:1px;">Non-Technical Events</h3>
   <div class="slider" style="justify-content: center;">
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -134,7 +145,7 @@ Join us for an enriching experience that combines technical excellence with prof
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -148,7 +159,7 @@ Join us for an enriching experience that combines technical excellence with prof
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -162,7 +173,7 @@ Join us for an enriching experience that combines technical excellence with prof
           </div>
         </div>
       </div>
-      <div class="slide event-card">
+  <div class="slide event-card fade-in">
         <div class="event-card flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -179,13 +190,14 @@ Join us for an enriching experience that combines technical excellence with prof
     </div>
   </div>
 </section>
-<section id="registration-info" style="max-width:700px; margin:40px auto 24px auto; padding:24px 20px; border-radius:16px; box-shadow:0 2px 16px #cec8ce33; background:#262525;">
+
+<section id="registration-info" class="fade-in" style="max-width:700px; margin:40px auto 24px auto; padding:24px 20px; border-radius:16px; box-shadow:0 2px 16px #cec8ce33; background:#262525;">
   <h2 style="color:#c020b0; font-size:1.6em; margin-bottom:16px; font-family:'Oswald', 'Segoe UI', sans-serif;">Registration Info</h2>
   <ul style="font-size:1.15em; color:#cec7c7; text-align:left; line-height:1.7; margin-left:0; padding-left:1.2em;">
-    <li>Registration fee: ₹200 per participant. Payment will be collected on arrival, or you can pay online (instructions will be emailed).</li>
+    <li>Registration fee: ₹200 per participant. Payment will be collected on arrival, or you can pay online .</li>
     <li>Certificate for all participants</li>
     <li>Food & refreshments provided</li>
-    <li>Separate judging criteria per event</li>
+    <li>Separate judging criteria per event</li>
   </ul>
 </section>
 <div id="countdown-container">
@@ -241,8 +253,16 @@ Join us for an enriching experience that combines technical excellence with prof
     </div>
 
       <footer>
-    <p>&copy; 2025 Cyberia Symposium </p>
-  </footer>
+    
+      <div style="display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap;">
+        <span style="color:#fff;">&copy; 2025 Cyberia Symposium</span>
+          <a href="https://www.instagram.com/cyberia_rec/" target="_blank" style="display:flex; align-items:center; text-decoration:none; pointer-events:auto;">
+            <span style="margin-right:6px; color:#fff; font-weight:600; font-size:1em; pointer-events:auto;">Follow us on</span>
+            <img src="image/insta.jpeg" alt="Instagram" style="height:32px; width:32px; border-radius:8px; box-shadow:0 2px 8px #0003; pointer-events:auto;" />
+          </a>
+      </div>
+    </footer>
+
 
 
   <script>

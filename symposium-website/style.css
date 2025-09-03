@@ -1,7 +1,60 @@
+@media (max-width: 600px) {
+  .navbar {
+    position: static !important;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  html {
+    scroll-padding-top: 0 !important;
+  }
+  header {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #about, #events, #registration-info {
+    margin-top: 0 !important;
+    padding-top: 16px !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+/* Fade-in animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,2,.3,.7), transform 0.8s cubic-bezier(.4,2,.3,.7);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+/* Remove bottom margin from last event card in Events section */
+.slider .slide.event-card:last-child {
+  margin-bottom: 0 !important;
+}
+/* Remove bottom margin from Events section */
+#events {
+  margin-bottom: 0 !important;
+}
+/* Remove bottom margin from last event card/box above Registration Info */
+.modern-box:last-child {
+  margin-bottom: 0;
+}
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
 /* Professional style for Registration Info section */
 #registration-info {
   max-width: 800px;
-  margin: 40px auto 24px auto;
+  margin: 0 auto 24px auto;
   padding: 32px 24px;
   border-radius: 20px;
   box-shadow: 0 8px 40px 0 rgba(192,32,176,0.15), 0 1.5px 8px 0 rgba(0,0,0,0.08);
@@ -137,11 +190,16 @@ header {
   padding: 0;
   margin: 0;
   text-align: center;
+  margin-top: 130px;
 }
 
 /* Navbar Modern Horizontal Layout */
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -834,9 +892,7 @@ footer {
   box-shadow: 0 4px 16px #0008;
   background: #fff;
 }
-.whatsapp-float:hover {
-  transform: scale(1.08);
-}
+
 
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
@@ -852,14 +908,27 @@ footer {
   transition: opacity 0.3s;
 }
 .close-menu {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  position: fixed;
+  top: 18px;
+  right: 18px;
   font-size: 2.5em;
   color: #00bfae;
   cursor: pointer;
   font-weight: bold;
-  z-index: 10001;
+  z-index: 11000;
+  background: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #00bfae44;
+  border: 2px solid #00bfae;
+}
+.close-menu:hover {
+  background: #00bfae;
+  color: #fff;
 }
 .mobile-navbar-links {
   display: flex;
@@ -1307,9 +1376,7 @@ footer {
   box-shadow: 0 4px 16px #0008;
   background: #fff;
 }
-.whatsapp-float:hover {
-  transform: scale(1.08);
-}
+
 
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
