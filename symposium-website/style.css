@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+  footer {
+    position: relative;
+    z-index: 12000;
+  }
   .navbar {
     position: static !important;
     box-shadow: none;
