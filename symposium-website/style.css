@@ -1,53 +1,68 @@
-@media (max-width: 600px) {
-  #countdown-container {
-    padding-bottom: 18px;
-  }
-  .countdown-date {
-    margin-top: 18px !important;
-    display: block;
-    font-size: 1.1em;
-    text-align: center;
-  }
+/* Professional style for Registration Info section */
+#registration-info {
+  max-width: 800px;
+  margin: 40px auto 24px auto;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px 0 rgba(192,32,176,0.15), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+  background: #111;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Oswald', Arial, sans-serif;
 }
-@media (max-width: 600px) {
-  #countdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4vw;
-    width: 100vw;
-    margin: 0 auto 16px auto;
-    padding: 0 2vw;
-    box-sizing: border-box;
-  }
-  .circle-box {
-    background: #101c1c;
-    border-radius: 50%;
-    box-shadow: 0 0 16px #00ffcc55, 0 0 2px #fff;
-    width: 56px;
-    height: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 2px;
-    border: 2px solid #00ffcc;
-  }
-  .circle-box span {
-    font-size: 1.6em;
-    color: #00ffcc;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold;
-    margin-bottom: 2px;
-  }
-  .circle-box .label {
-    font-size: 0.85em;
-    color: #fff;
-    font-family: 'Segoe UI', sans-serif;
-    margin-top: 0;
-    letter-spacing: 0.5px;
-  }
+#registration-info h2 {
+  color: #b5179e;
+  font-size: 2.5em;
+  margin-bottom: 24px;
+  font-family: 'Oswald', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#registration-info ul {
+  font-size: 1.25em;
+  line-height: 1.8;
+  color: #e4e1e1;
+  margin-bottom: 0;
+  max-width: 900px;
+  text-align: left;
+  font-weight: 400;
+  list-style: disc inside;
+  padding-left: 0;
+}
+/* Better alignment for About section */
+#about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px 0 rgba(192,32,176,0.15), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Oswald', Arial, sans-serif;
+}
+#about h2 {
+  color: #b5179e;
+  font-size: 2.5em;
+  margin-bottom: 24px;
+  font-family: 'Oswald', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#about p {
+  font-size: 1.25em;
+  line-height: 1.8;
+  color: #e4e1e1;
+  margin-bottom: 0;
+  max-width: 900px;
+  text-align: center;
+  font-weight: 400;
 }
 @media (max-width: 600px) {
   #countdown {
@@ -126,6 +141,7 @@ header {
 
 /* Navbar Modern Horizontal Layout */
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -681,7 +697,6 @@ footer {
 }
 
 .countdown-date {
-  margin-top: 5px;
   font-size: 1.5em;
   color: #fff;
   letter-spacing: 1px;
@@ -873,7 +888,12 @@ footer {
 }
 .hamburger-menu {
   display: none;
-  position: fixed;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 10000;
+  cursor: pointer;
+  /* Ensure it's only visible at the top inside navbar */
   top: 18px;
   right: 18px;
   z-index: 10000;
@@ -1039,7 +1059,7 @@ footer {
   }
   .hamburger-menu {
     display: block !important;
-    position: fixed;
+    position: absolute !important;
     top: 18px;
     right: 18px;
     z-index: 10000;
@@ -1273,7 +1293,7 @@ footer {
 /* Floating WhatsApp Icon */
 .whatsapp-float {
   position: fixed;
-  right: 32px;
+  left: 32px;
   bottom: 32px;
   z-index: 1000;
   background: none;

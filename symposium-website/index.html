@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cyberia 2025</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
+    <!-- Popup Modal for Symposium Image -->
+    <div id="img-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+      <div style="background:#fff; padding:24px; border-radius:12px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px #0005; position:relative; display:flex; flex-direction:column; align-items:center;">
+        <button onclick="document.getElementById('img-popup').style.display='none'" style="position:absolute; top:12px; right:12px; background:#c020b0; color:#fff; border:none; border-radius:6px; padding:6px 12px; cursor:pointer; font-size:1em;">Close</button>
+        <h2 style="margin-bottom:16px; color:#c020b0;">Symposium 2K25</h2>
+        <img src="image/symposiyam_2k25.jpg" alt="Symposium 2K25" style="max-width:80vw; max-height:70vh; border-radius:8px; box-shadow:0 2px 16px #0003;" />
+      </div>
+    </div>
     <header>
   <div class="navbar">
     <div class="college-logo">
@@ -19,23 +28,32 @@
     <nav class="navbar-links">
       <a href="#">HOME</a>
       <a href="#events">EVENTS</a>
-      <a href="#">REGISTER</a>
+      <a href="#registration-info">REGISTER</a>
       <a href="#">ABOUT </a>
+  <a href="#coordinator-footer">CONTACT</a>
     </nav>
-    <div class="cyberia-logo">
-  <img src="image/cyberia2k25.jpg" alt="Cyberia Logo" style="height:90px; width:auto; margin-left:24px; border-radius:16px; box-shadow:0 4px 24px #00ffcc55;" />
-    </div>
+      <div class="cyberia-logo">
+        <img src="image/cyberia2k25.jpg" alt="Cyberia Logo" style="height:90px; width:auto; margin-left:24px; border-radius:16px; box-shadow:0 4px 24px #00ffcc55;" />
+      </div>
+      <!-- Hamburger Icon -->
+      <span class="hamburger-menu" onclick="toggleMobileMenu()">
+        <svg width="32" height="32" viewBox="0 0 32 32"><rect y="6" width="32" height="4" rx="2" fill="#00ffff"/><rect y="14" width="32" height="4" rx="2" fill="#00ffff"/><rect y="22" width="32" height="4" rx="2" fill="#00ffff"/></svg>
+      </span>
   </div>
 </header>
   <header>
-    <h1>Cyberia 2025</h1>
-    <p>National Level Tech Symposium | Hosted by ROEVER ENGINEERING COLLEG </p>
-    
+    <h1>CYBERIA-2k25</h1>
+    <p>National Level Tech Symposium | Hosted By ROEVER ENGINEERING COLLEGE</p>
+
   </header>
 
   <section id="about">
-    <h2>About Cyberia</h2>
-    <p>Cyberia is a celebration of innovation, technology, and creativity. Join us for  competitions, and keynote sessions with industry leaders.</p>
+  <h2>About CYBERIA-2k25</h2>
+  <p>CYBERIA-2K25 is the annual national-level technical symposium organized by the Department of Computer Science and Engineering at Roever Engineering College, Perambalur. This event serves as a professional platform for students and aspiring technologists to showcase their skills, share innovative ideas, and engage in collaborative learning.
+
+The symposium features a diverse range of technical events, workshops, and competitions designed to foster creativity, problem-solving, and teamwork. CYBERIA-2K25 brings together future developers, designers, and technology leaders to connect, compete, and grow in a dynamic environment.
+
+Join us for an enriching experience that combines technical excellence with professional networking, knowledge sharing, and personal development.</p>
   </section>
 
  <section id="events">
@@ -161,6 +179,15 @@
     </div>
   </div>
 </section>
+<section id="registration-info" style="max-width:700px; margin:40px auto 24px auto; padding:24px 20px; border-radius:16px; box-shadow:0 2px 16px #cec8ce33; background:#262525;">
+  <h2 style="color:#c020b0; font-size:1.6em; margin-bottom:16px; font-family:'Oswald', 'Segoe UI', sans-serif;">Registration Info</h2>
+  <ul style="font-size:1.15em; color:#cec7c7; text-align:left; line-height:1.7; margin-left:0; padding-left:1.2em;">
+    <li>Registration fee: ₹200 per participant. Payment will be collected on arrival, or you can pay online (instructions will be emailed).</li>
+    <li>Certificate for all participants</li>
+    <li>Food & refreshments provided</li>
+    <li>Separate judging criteria per event</li>
+  </ul>
+</section>
 <div id="countdown-container">
   <div id="countdown">
     <div class="countdown-item circle-box">
@@ -183,14 +210,16 @@
   <div class="countdown-date">August 18th, 2025</div>
 </div>
 <center>
+
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScYetVWd9buALLAZiEnY3srYmWS8Z3UHEdfspNsK3stCMj3gg/viewform" class="btn" target="_blank">Register Now</a>
+  <span style="margin-left:12px; font-size:1.1em; color:#c020b0; font-weight:600; vertical-align:middle;">(for online register)</span>
 
 </center>
   
   
 
 
-  <div class="coordinator-footer">
+  <div class="coordinator-footer" id="coordinator-footer">
       <div style="background:#c020b0; color:#fff; padding:18px 0 10px 0; text-align:center; font-family:'Oswald', 'Segoe UI', sans-serif; font-size:1.15em; letter-spacing:2px; border-top-left-radius:14px; border-top-right-radius:14px; display:flex; flex-wrap:wrap; justify-content:center; gap:48px;">
         <div style="min-width:220px; text-align:left;">
           <div style="font-size:1.05em; font-weight:700; letter-spacing:2px; margin-bottom:4px;">STAFF COORDINATOR</div>
@@ -270,8 +299,9 @@ window.onload = function() {
   <nav class="mobile-navbar-links">
     <a href="#" onclick="toggleMobileMenu()">HOME</a>
     <a href="#events" onclick="toggleMobileMenu()">EVENTS</a>
-    <a href="#" onclick="toggleMobileMenu()">REGISTER</a>
+    <a href="#registration-info" onclick="toggleMobileMenu()">REGISTER</a>
     <a href="#" onclick="toggleMobileMenu()">ABOUT </a>
+    <a href="#coordinator-footer" onclick="toggleMobileMenu()">CONTACT </a>
   </nav>
 </div>
 <!-- Hamburger Icon -->
