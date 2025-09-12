@@ -725,7 +725,6 @@ footer {
     display: block;
     height: 36px;
     margin-bottom: 8px;
-    margin-top: 8px;
   }
   .college-info {
     font-size: 1em;
@@ -891,8 +890,6 @@ footer {
     box-shadow: 0 2px 8px #00ffcc22;
     border-radius: 0 0 18px 18px;
     width: 100vw;
-  }
-    margin-top: 8px;
   }
   .college-info {
     font-size: 1em;
