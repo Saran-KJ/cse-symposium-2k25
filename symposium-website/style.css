@@ -1,3 +1,7 @@
+/* Hide WhatsApp button when overlapping footer */
+.whatsapp-float.hide {
+  display: none !important;
+}
 /* Make rule-section ul bullets compact and left-aligned on desktop */
 .rule-section ul {
   list-style-position: inside;
@@ -642,13 +646,6 @@ section p {
   box-shadow: 0 8px 32px #00fff2a0;
 }
 
-/* Colored backgrounds for each card */
-.slide.event-card:nth-child(1) { background: #ffb366; }
-.slide.event-card:nth-child(2) { background: #ffb366; }
-.slide.event-card:nth-child(4) { background: #0099ff; }
-.slide.event-card:nth-child(5) { background: #ff5252; }
-.slide.event-card:nth-child(6) { background: #00b894; }
-.slide.event-card:nth-child(7) { background: #181818; }
 
 /* Event Image */
 .event-img {
@@ -853,7 +850,7 @@ footer {
   .whatsapp-float {
     position: fixed;
     right: 14px;
-    bottom: 14px;
+    bottom: 70px;
     z-index: 100;
   }
   .whatsapp-float img {
