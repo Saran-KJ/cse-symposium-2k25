@@ -281,7 +281,7 @@
 }
 html {
   scroll-padding-top: 90px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 /* Professional style for Registration Info section */
 #registration-info {
