@@ -1050,10 +1050,10 @@ footer {
 .flip-card-back h3, .flip-card-back img {
   display: none;
 }
-.flip-card-back p {
+ .flip-card-back p {
   font-size: 1.1em;
   color: #fff;
-  text-align: center;
+  text-align: justify;
   margin: 0;
   padding: 0 8px;
 }
